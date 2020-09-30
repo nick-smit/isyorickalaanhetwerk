@@ -1,6 +1,5 @@
 <?php
-$janee = (new DateTime())->format('H') > 10 || (new DateTime())->format('H') < 18;
-
+$isWorking = (new DateTime())->format('H') > 10 || (new DateTime())->format('H') < 18;
 ?>
 
 <html>
@@ -38,7 +37,7 @@ $janee = (new DateTime())->format('H') > 10 || (new DateTime())->format('H') < 1
 </head>
 <body>
     <div>
-        <div><?= $janee ? 'JA' : 'NEE'?></div>
+        <div><?= $isWorking ? 'JA' : 'NEE'?></div>
     </div>
     <footer>
         Yorick werkt tussen 10:00 en 18:00 uur.
