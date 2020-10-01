@@ -1,5 +1,5 @@
 <?php
-$isWorking = (new DateTime())->format('H') > 10 || (new DateTime())->format('H') < 18;
+$isWorking = (new DateTime())->format('H') > 10 && (new DateTime())->format('H') < 18;
 ?>
 
 <html>
